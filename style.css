@@ -278,8 +278,9 @@ nav.show div.icon-close {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  -webkit-backdrop-size: cover;
 
-  background-image: url("https://blog.psicomanager.com.br/wp-content/uploads/2022/12/imagem5.png");
+  background-image: url("./assets/images/parallax.jpg");
 }
 
 /* #logo-parallax {
