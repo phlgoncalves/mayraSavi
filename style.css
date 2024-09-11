@@ -272,7 +272,38 @@ nav.show div.icon-close {
   align-items: center;
   height: 100vh;
   width: 100%;
-  /* position: relative; */
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+
+  position: relative; /* Alterado para relative */
+  background-image: url("./assets/images/parallax.jpg");
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("./assets/images/parallax.jpg");
+  background-attachment: scroll; /* Removido fixed */
+  background-size: cover;
+  transform: translateZ(0); /* Para melhorar a performance */
+  will-change: transform; /* Para otimizar a renderização */
+}
+
+/* #logo-parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
   overflow: hidden;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -286,7 +317,7 @@ nav.show div.icon-close {
   
 
   background-image: url("./assets/images/parallax.jpg");
-}
+} */
 
 /* #logo-parallax {
   content: "";

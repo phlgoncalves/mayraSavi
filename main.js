@@ -115,3 +115,13 @@ window.addEventListener('scroll', function () {
   backToTop()
   activateMenuAtCurrentSection()
 })
+
+// parallax
+window.addEventListener('scroll', function () {
+  const parallaxLayer = document.querySelector('.parallax-layer');
+  const scrollPosition = window.scrollY;
+
+  // Ajuste a velocidade de rolagem conforme necessário
+  const speed = 0.5;
+  parallaxLayer.style.transform = `translateY(${scrollPosition * speed}px)`;
+});
