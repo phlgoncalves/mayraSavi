@@ -272,13 +272,18 @@ nav.show div.icon-close {
   align-items: center;
   height: 100vh;
   width: 100%;
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  -webkit-backdrop-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+
+  position: sticky;
+  position: -webkit-sticky;
+  
 
   background-image: url("./assets/images/parallax.jpg");
 }
