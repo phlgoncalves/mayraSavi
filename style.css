@@ -294,6 +294,12 @@ nav.show div.icon-close {
   background-size: cover;
   transform: translateZ(0); /* Para melhorar a performance */
   will-change: transform; /* Para otimizar a renderização */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* #logo-parallax {
