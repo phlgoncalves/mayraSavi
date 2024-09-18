@@ -144,7 +144,6 @@ body {
 .logo {
   font: 700 1.31rem var(--title-font);
   color: var(--title-color);
-  text-align: center;
 }
 
 .logo span {
@@ -286,7 +285,7 @@ nav.show div.icon-close {
   background-image: url("./assets/images/teste/sala1.jpeg");
 }
 
-#logo-parallax:after {
+#logo-parallas:after {
   content: '';
   height: 100%;
   width: 100%;
@@ -401,7 +400,7 @@ nav.show div.icon-close {
 #home .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  text-align: justify;
+  text-align: center;
 }
 
 #home .text h1 {
@@ -476,10 +475,6 @@ nav.show div.icon-close {
 .card .title {
   font-size: 1.5;
   margin-bottom: 0.75rem;
-}
-
-.paragraph-card{
-  text-align: justify;
 }
 
 #logo_card {
@@ -903,14 +898,6 @@ footer .brand a img {
   main {
     margin-top: var(--header-height);
   }
-
-
-  /* .parallax-layer {
-    top: -18.688rem;
-    left: 14.938rem;
-    height: 166%;
-    width: 67%;
-  } */
 
   /* home */
   #home .container {
