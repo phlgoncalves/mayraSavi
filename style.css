@@ -133,6 +133,7 @@ body {
   z-index: 100;
   background-color: var(--body-color);
   width: 100%;
+  box-shadow:  rgba(250,250,250,1) 0px 25px 20px -20px;  
 }
 
 #header.scroll {
@@ -143,6 +144,7 @@ body {
 .logo {
   font: 700 1.31rem var(--title-font);
   color: var(--title-color);
+  text-align: center;
 }
 
 .logo span {
@@ -279,8 +281,18 @@ nav.show div.icon-close {
   -webkit-background-size: cover;
   -moz-background-size: cover;
 
-  position: relative; /* Alterado para relative */
-  background-image: url("./assets/images/parallax.jpg");
+  position: relative;
+  /* Alterado para relative */
+  background-image: url("./assets/images/teste/sala1.jpeg");
+}
+
+#logo-parallas:after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, var(--body-color) 90%);
 }
 
 .parallax-layer {
@@ -289,17 +301,26 @@ nav.show div.icon-close {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url("./assets/images/parallax.jpg");
-  background-attachment: scroll; /* Removido fixed */
+  background-image: url("./assets/images/teste/sala5.jpeg");
+  background-attachment: scroll;
   background-size: cover;
-  transform: translateZ(0); /* Para melhorar a performance */
-  will-change: transform; /* Para otimizar a renderização */
+  transform: translateZ(0);
+  will-change: transform;
   display: flex;
   align-items: center;
   justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.parallax-layer:after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, var(--body-color) 90%);
 }
 
 /* #logo-parallax {
@@ -380,7 +401,7 @@ nav.show div.icon-close {
 #home .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  text-align: center;
+  text-align: justify;
 }
 
 #home .text h1 {
@@ -455,6 +476,10 @@ nav.show div.icon-close {
 .card .title {
   font-size: 1.5;
   margin-bottom: 0.75rem;
+}
+
+.paragraph-card{
+  text-align: justify;
 }
 
 #logo_card {
@@ -877,6 +902,14 @@ footer .brand a img {
   /* layout */
   main {
     margin-top: var(--header-height);
+  }
+
+
+  .parallax-layer {
+    top: -18.688rem;
+    left: 14.938rem;
+    height: 166%;
+    width: 67%;
   }
 
   /* home */
