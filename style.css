@@ -664,8 +664,8 @@ footer .brand a img {
 /*-----------BACK TO TOP------------*/
 
 .back-to-top {
-  background: var(--base-color);
-  color: var(--text-color-light);
+  background: rgb(228, 221, 208);
+  color: #008000;
 
   position: fixed;
   right: 1rem;
@@ -689,6 +689,7 @@ footer .brand a img {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 /* Cookies */
 .cookies-msg {
